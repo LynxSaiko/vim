@@ -1,0 +1,20 @@
+" Ale linter settings
+" Hover detail info in preview window
+let g:ale_hover_to_preview = 1 
+" Hover detail info in balloons
+""let g:ale_set_balloons = 1
+" Set custom symbols to Ale gutter when errors / warnings show
+let g:ale_sign_error = '' 
+let g:ale_sign_warning = '' 
+" Change Ale highlight settings
+highlight ALEWarningSign ctermbg=Yellow
+highlight ALEWarningSign ctermfg=Black
+highlight ALEWarning ctermbg=DarkYellow
+highlight ALEWarning ctermfg=White
+highlight ALEErrorSign ctermbg=DarkRed
+highlight ALEErrorSign ctermfg=White
+highlight ALEError ctermfg=DarkRed
+" Set Ctrl+j/k to move to next/prev errors and warnings
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap
+
